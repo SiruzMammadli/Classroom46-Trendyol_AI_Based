@@ -1,3 +1,5 @@
+using Api.Infrastructure.Extensions;
+
 namespace Api.Application.Services;
 
 public sealed class AuthService(IRepository<User> users, ITokenService tokens) : IAuthService

@@ -2,7 +2,7 @@ namespace Api.Domain.Entities;
 
 public sealed class User : AuditableEntity
 {
-    public required string FullName { get; set; }
+    public string FullName { get; set; } = null!;
     public required string Email { get; set; }
     public required string PasswordHash { get; set; }
 }
